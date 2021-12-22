@@ -1,29 +1,19 @@
-.App {
-  text-align: center;
+.booklist {
+  width: 500px;
+  max-width: 1170px;
+  margin: 50px auto;
+  display: grid;
+  gap: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(4.1fr);
   }
 }
-section {
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book {
+  background-color: bisque;
+  border-radius: 50px;
+  padding: 20px 30px;
 }
